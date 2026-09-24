@@ -59,6 +59,14 @@ The apex `nvprod.us` is separate and is not required for this site. If it should
 
 GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
+## Search and AI crawler opt-out
+
+`robots.txt` blocks crawling by default, including compliant AI crawlers. Googlebot and Bingbot are allowed to fetch pages so they can read the `noindex` meta tags on the homepage and 404 page. Google-Extended is explicitly disallowed separately from Google Search. Both pages also request `nofollow`, `noarchive`, `nosnippet`, and `noimageindex` where supported. Preserve the robots meta tag when adding pages, and ensure each new page is included in the build.
+
+These are voluntary crawler directives, not access control. The website stays public, bots can ignore the rules, and existing search listings may take time to disappear. Blocking a search crawler before it reads `noindex` can leave a URL-only listing. GitHub Pages does not provide configurable response headers here, so these directives use HTML and the root `robots.txt` file.
+
+See [Google's noindex guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing) and [robots.txt guidance](https://developers.google.com/search/docs/crawling-indexing/robots/intro).
+
 ## Design reference
 
 The original reference remains in `design-system/index.html`, with its specification in `design-system/DESIGN-SYSTEM.md` and screenshot in `design-system/reference.png`. It is not included in the deployed site.

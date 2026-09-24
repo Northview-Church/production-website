@@ -1,0 +1,14 @@
+# Keep compliant crawlers out by default, including AI crawlers.
+User-agent: *
+Disallow: /
+
+# Allow major search crawlers to read the page-level noindex directives.
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Google's AI training policy token is blocked explicitly, independent of Googlebot.
+User-agent: Google-Extended
+Disallow: /

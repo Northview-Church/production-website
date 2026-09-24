@@ -4,7 +4,7 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 site_dir="$repo_root/_site"
 
-site_files=(index.html 404.html site.css design-system/tokens.css design-system/components.css)
+site_files=(index.html 404.html robots.txt site.css design-system/tokens.css design-system/components.css)
 
 for path in "${site_files[@]}"; do
   if [[ ! -f "$repo_root/$path" ]]; then
