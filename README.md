@@ -27,7 +27,7 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 
 For each department, collect gear model, purpose, quantity where useful, and manufacturer links. For project budgets, include scope, approximate cost or range, pricing date, and whether installation/tax are included. Leave unavailable prices explicitly pending.
 
-Equipment quantities, installed configurations, and roles come from the production team. Product naming and links were checked against manufacturer sources on 2026-09-24. Product pages describe available capabilities, not necessarily the installed configuration. Official specifications or legacy documentation are linked when a suitable product page is unavailable. Clone fixtures remain explicitly labeled, without links that imply they are original-brand products.
+Equipment quantities, installed configurations, and roles come from the production team. Product naming and links were checked against manufacturer sources on 2026-09-24. Product pages describe available capabilities, not necessarily the installed configuration. Official specifications or legacy documentation are linked when a suitable product page is unavailable. Fixture listings use the team-approved “style” wording where applicable, without links that imply they are original-brand products.
 
 Details still to collect: the exact Acuity panel variant (two stripes alone does not distinguish 2X/2M and display variants), fixture manufacturers/model numbers and counts, and project pricing. Do not infer missing quantities or price the installed projects from retail component listings.
 
