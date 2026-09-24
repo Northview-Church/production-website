@@ -64,7 +64,7 @@ GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages
 
 The camera-by-camera inventory supersedes the earlier camera total: six RED KOMODO-X bodies and one original RED KOMODO 6K. Cam 4's “KOMODO, X” is interpreted as KOMODO-X. Camera bodies are listed only in the seven camera setups, not duplicated in the Video equipment list.
 
-Cam 2's Sigma 24–70mm f/2.8 version and mount are unspecified, so its listing stays general. The team explicitly confirmed one **Kessler Second Shooter Pro 2**; retain that supplied name and use the team-provided [Second Shooter product link](https://kesslercrane.com/pages/second-shooter-pro). Cinekinetic Cinesaddle size/model, Cyanview CY-RIO variant, and RED Pro I/O battery-mount variant are unspecified. Only list accessories on the cameras where the team supplied them.
+Cam 2's Sigma 24–70mm f/2.8 version and mount are unspecified, so its listing stays general. The team explicitly confirmed one **Kessler Second Shooter Pro 2**; retain that supplied name and use the team-provided [Second Shooter product link](https://kesslercrane.com/pages/second-shooter-pro). Cinekinetic Cinesaddle size/model and RED Pro I/O battery-mount variant are unspecified. The team supplied the RIO Live product link for the Cyanview camera interfaces; the shared Cyanview RCP is listed for shading without an unconfirmed quantity. Only list accessories on the cameras where the team supplied them.
 
 ## LED raster diagram
 
