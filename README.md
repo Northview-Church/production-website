@@ -60,6 +60,12 @@ The apex `nvprod.us` is separate and is not required for this site. If it should
 
 GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
+## Camera setup content
+
+The camera-by-camera inventory supersedes the earlier camera total: six RED KOMODO-X bodies and one original RED KOMODO 6K. Cam 4's “KOMODO, X” is interpreted as KOMODO-X. Keep the seven setups and aggregate camera counts in sync.
+
+Cam 2's Sigma 24–70mm f/2.8 version and mount are unspecified, so its listing stays general. The team explicitly confirmed one **Kessler Second Shooter Pro 2**; retain that supplied name without linking it to the different Second Shooter PRO page. Cinekinetic Cinesaddle size/model, Cyanview CY-RIO variant, and RED Pro I/O battery-mount variant are unspecified. Only list accessories on the cameras where the team supplied them.
+
 ## LED raster diagram
 
 The team confirmed the following dimensions on 2026-09-24. Double panels are 128 × 256 px; single panels are 128 × 128 px.

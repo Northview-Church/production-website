@@ -357,6 +357,100 @@ body {
   font-size: var(--fs-small);
 }
 
+.camera-setups {
+  margin-top: var(--s4);
+}
+
+.camera-setups__heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--s2);
+  margin-bottom: var(--s2);
+}
+
+.camera-setups__heading h3 {
+  margin-top: 6px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.camera-setups__intro {
+  max-width: 34ch;
+  margin: 0;
+  color: var(--nv-text-3);
+  font-size: var(--fs-small);
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s2);
+}
+
+.camera-card,
+.camera-shared {
+  min-width: 0;
+  padding: var(--s2);
+  background: var(--nv-surface);
+  border-radius: var(--radius-card);
+  border-bottom: 4px solid var(--nv-raised);
+}
+
+.camera-card h4,
+.camera-shared h4 {
+  margin: 0;
+  color: var(--nv-text);
+  font-family: var(--ff-cond);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.camera-card ul,
+.camera-shared ul {
+  margin: var(--s1) 0 0;
+  padding-left: 20px;
+  color: var(--nv-text-2);
+  font-size: var(--fs-small);
+  line-height: 1.55;
+}
+
+.camera-card li + li,
+.camera-shared li + li {
+  margin-top: 5px;
+}
+
+.camera-card a,
+.camera-shared a {
+  color: var(--nv-cyan);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(83 218 236 / 45%);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.camera-card a:hover,
+.camera-card a:focus-visible,
+.camera-shared a:hover,
+.camera-shared a:focus-visible {
+  color: var(--nv-text);
+  text-decoration-color: currentColor;
+}
+
+.camera-shared {
+  margin-top: var(--s2);
+  border-bottom-color: var(--nv-cyan);
+}
+
+.camera-shared ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.camera-shared .gear-item__quantity {
+  margin-right: 4px;
+}
+
 .led-raster {
   margin: var(--s2) 0 var(--s3);
   padding: var(--s2);
@@ -606,6 +700,18 @@ body {
 
   .system-details__budget .placeholder {
     margin-top: var(--s1);
+  }
+
+  .camera-setups__heading {
+    display: block;
+  }
+
+  .camera-setups__intro {
+    margin-top: var(--s1);
+  }
+
+  .camera-grid {
+    grid-template-columns: 1fr;
   }
 }
 
