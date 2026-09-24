@@ -187,14 +187,42 @@
               <h2 id="led-title">LED</h2>
             </div>
           </div>
+          <figure class="led-raster" aria-labelledby="led-raster-caption">
+            <div class="led-raster__scroll" tabindex="0" aria-label="Scrollable LED wall raster diagram">
+              <img src="assets/led-raster.svg" alt="Diagram of seven LED walls shown as grids of double panels, sized to scale.">
+            </div>
+            <figcaption class="led-raster__caption" id="led-raster-caption">
+              <span>Each cell is one 128 × 256 px double panel. Wall sizes are shown to scale; spacing and alignment are illustrative.</span>
+              <a href="assets/led-raster.svg" download>Download SVG</a>
+            </figcaption>
+            <table class="led-raster__table">
+              <caption class="visually-hidden">LED wall panel grids and pixel resolutions</caption>
+              <colgroup><col class="led-raster__wall-column"><col class="led-raster__grid-column"><col class="led-raster__resolution-column"></colgroup>
+              <thead>
+                <tr><th scope="col">Wall</th><th scope="col">Grid · panels</th><th scope="col">Resolution</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Left IMAG</th><td>11 × 3 · 33</td><td>1408 × 768 px</td></tr>
+                <tr><th scope="row">Wall 1</th><td>5 × 3 · 15</td><td>640 × 768 px</td></tr>
+                <tr><th scope="row">Wall 2</th><td>6 × 4 · 24</td><td>768 × 1024 px</td></tr>
+                <tr><th scope="row">Center wall</th><td>20 × 4 · 80</td><td>2560 × 1024 px</td></tr>
+                <tr><th scope="row">Wall 3</th><td>6 × 4 · 24</td><td>768 × 1024 px</td></tr>
+                <tr><th scope="row">Wall 4</th><td>5 × 3 · 15</td><td>640 × 768 px</td></tr>
+                <tr><th scope="row">Right IMAG</th><td>11 × 3 · 33</td><td>1408 × 768 px</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><th scope="row" colspan="2">Total</th><td>224 double panels</td></tr>
+              </tfoot>
+            </table>
+          </figure>
           <div class="system-details">
             <div class="system-details__gear">
               <h3>Equipment</h3>
               <ul class="gear-list">
                 <li class="gear-item">
                   <div class="gear-item__details">
-                    <p class="gear-item__name"><span class="gear-item__quantity">200×</span>Unilumin Upad III</p>
-                    <p class="gear-item__meta">3.9 mm pixel pitch · <a class="gear-item__resource" href="https://unilumin.com/news/company-news/why-unilumins-upad-is-the-best-rental-display.html" target="_blank" rel="noopener">Manufacturer overview <span class="gear-item__link-mark" aria-hidden="true">↗</span></a></p>
+                    <p class="gear-item__name"><span class="gear-item__quantity">224×</span>Unilumin Upad III</p>
+                    <p class="gear-item__meta">128 × 256 px double panels · 3.9 mm pixel pitch · <a class="gear-item__resource" href="https://unilumin.com/news/company-news/why-unilumins-upad-is-the-best-rental-display.html" target="_blank" rel="noopener">Manufacturer overview <span class="gear-item__link-mark" aria-hidden="true">↗</span></a></p>
                   </div>
                 </li>
                 <li class="gear-item">

@@ -357,6 +357,112 @@ body {
   font-size: var(--fs-small);
 }
 
+.led-raster {
+  margin: var(--s2) 0 var(--s3);
+  padding: var(--s2);
+  overflow: hidden;
+  background: var(--nv-surface);
+  border-radius: var(--radius-card);
+  border-bottom: 4px solid var(--nv-raised);
+}
+
+.led-raster__scroll {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--nv-line) transparent;
+}
+
+.led-raster__scroll:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.led-raster__scroll img {
+  display: block;
+  width: 100%;
+  min-width: 900px;
+  height: auto;
+}
+
+.led-raster__caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px 24px;
+  margin-top: 12px;
+  color: var(--nv-text-3);
+  font-size: 14px;
+}
+
+.led-raster__caption a {
+  flex: 0 0 auto;
+  color: var(--nv-cyan);
+  text-decoration: underline;
+  text-decoration-color: rgb(83 218 236 / 45%);
+  text-underline-offset: 3px;
+}
+
+.led-raster__table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+  color: var(--nv-text-2);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.led-raster__table .led-raster__wall-column { width: 30%; }
+.led-raster__table .led-raster__grid-column { width: 27%; }
+.led-raster__table .led-raster__resolution-column { width: 43%; }
+
+.led-raster__table th,
+.led-raster__table td {
+  padding: 8px 6px;
+  border-top: 1px solid var(--nv-line);
+}
+
+.led-raster__table thead th {
+  color: var(--nv-text-3);
+  font-family: var(--ff-cond);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.led-raster__table tbody th,
+.led-raster__table tfoot th {
+  color: var(--nv-text);
+  font-weight: 600;
+}
+
+.led-raster__table td:last-child,
+.led-raster__table tfoot td {
+  white-space: nowrap;
+}
+
+.led-raster__table tfoot th,
+.led-raster__table tfoot td {
+  border-top: 1px solid var(--nv-cyan);
+  color: var(--nv-cyan);
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .system-details__budget .placeholder {
   color: var(--nv-text-2);
   font-family: var(--ff-cond);
@@ -521,6 +627,31 @@ body {
 }
 
 @media (max-width: 420px) {
+  .led-raster {
+    padding: 12px;
+  }
+
+  .led-raster__caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+  }
+
+  .led-raster__table {
+    font-size: 12px;
+  }
+
+  .led-raster__table th,
+  .led-raster__table td {
+    padding: 8px 3px;
+  }
+
+  .led-raster__table thead th {
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+
   .brand__word {
     font-size: 23px;
   }

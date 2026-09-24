@@ -19,6 +19,7 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 
 - `index.html` — homepage and the four linked department sections. Update the gear lists here and replace project-budget placeholders as pricing becomes available.
 - `site.css` — site layout and responsive styles.
+- `assets/led-raster.svg` — downloadable LED wall-size diagram; each cell represents one 128 × 256 px double panel. The wall-size table in `index.html` provides the same dimensions as text.
 - `404.html` — missing-page response.
 - `design-system/` — existing brand reference, shared CSS, and assets. The design-system examples are illustrative, not the conference gear inventory.
 - `scripts/build.sh` — copies only public site files into `_site/`.
@@ -58,6 +59,22 @@ Use **DNS only** so GitHub can validate and serve the domain directly. Do not in
 The apex `nvprod.us` is separate and is not required for this site. If it should redirect to `www`, point its A records to GitHub Pages (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and verify the redirect and certificate afterward. Leave unrelated records alone.
 
 GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+## LED raster diagram
+
+Wall dimensions are columns × rows of double panels, each 128 pixels wide × 256 pixels tall. The team confirmed the following layout and revised the inventory to 224 double panels on 2026-09-24:
+
+| Wall | Double panels | Pixels (width × height) |
+| --- | --- | --- |
+| Left IMAG | 11 × 3 | 1,408 × 768 |
+| Wall 1 | 5 × 3 | 640 × 768 |
+| Wall 2 | 6 × 4 | 768 × 1,024 |
+| Center wall | 20 × 4 | 2,560 × 1,024 |
+| Wall 3 | 6 × 4 | 768 × 1,024 |
+| Wall 4 | 5 × 3 | 640 × 768 |
+| Right IMAG | 11 × 3 | 1,408 × 768 |
+
+Total active pixels: 7,340,032. The SVG uses a consistent scale for wall sizes with illustrative spacing and alignment; it is not a processor mapping or a physical installation drawing. Keep the SVG, HTML table, and inventory count in sync when dimensions change.
 
 ## Search and AI crawler opt-out
 
