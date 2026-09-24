@@ -74,9 +74,9 @@ The team confirmed the following dimensions on 2026-09-24. Double panels are 128
 | Wall 4 | 9 double + 12 single | 640 × 768 |
 | Right IMAG | 33 double | 1,408 × 768 |
 
-Walls 1 and 4 each have four front-facing columns and one column returning at 90°. The two columns meeting at each corner contain six single panels each. In the flattened raster, Wall 1's first two columns are singles with the fold between columns 1 and 2; Wall 4's last two columns are singles with the fold between columns 4 and 5. Other walls use double panels throughout.
+Walls 1 and 4 each have four front-facing columns and one column returning at 90°. The two columns meeting at each corner contain six single panels each. In the flattened raster, Wall 1's first two columns are singles with the corner between columns 1 and 2; Wall 4's last two columns are singles with the corner between columns 4 and 5. Other walls use double panels throughout.
 
-Total inventory: **212 double + 24 single = 236 physical panels**, equivalent in pixel area to the earlier 224-double-panel layout. Total active pixels remain **7,340,032**. The diagram is a flattened raster with fold markers; wall spacing and vertical alignment are illustrative, not processor mapping positions. Keep the SVG, HTML table, and inventory count in sync when dimensions change.
+Total inventory: **212 double + 24 single = 236 physical panels**, equivalent in pixel area to the earlier 224-double-panel layout. Total active pixels remain **7,340,032**. The diagram is a flattened raster with corner markers; wall spacing and vertical alignment are illustrative, not processor mapping positions. Keep the SVG, HTML table, and inventory count in sync when dimensions change.
 
 ## Search and AI crawler opt-out
 

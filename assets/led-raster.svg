@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="968" height="286" viewBox="0 0 968 286" role="img" aria-labelledby="title description">
   <title id="title">Northview LED raster with corner returns</title>
-  <desc id="description">Seven LED walls arranged from left to right. Each outlined double panel is 128 by 256 pixels. Cyan single panels are 128 by 128 pixels. Wall 1 has a left 90 degree return: columns 1 and 2 are each six single panels tall, and the fold is between those columns. Wall 4 has a right 90 degree return: columns 4 and 5 are each six single panels tall, and the fold is between those columns. Both walls also have nine double panels. The returns are drawn flat to keep one scale; spacing and alignment are illustrative, and no processor mapping is shown. Total: 212 double panels and 24 single panels, 236 physical panels.
+  <desc id="description">Seven LED walls arranged from left to right. Each outlined double panel is 128 by 256 pixels. Cyan single panels are 128 by 128 pixels. Wall 1 has a left 90 degree return: columns 1 and 2 are each six single panels tall, and the corner is between those columns. Wall 4 has a right 90 degree return: columns 4 and 5 are each six single panels tall, and the corner is between those columns. Both walls also have nine double panels. The returns are drawn flat to keep one scale; spacing and alignment are illustrative, and no processor mapping is shown. Total: 212 double panels and 24 single panels, 236 physical panels.
   </desc>
   <rect width="968" height="286" fill="#171a21"/>
   <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
@@ -56,10 +56,10 @@
     <text x="106" y="221" fill="#f3f3f3" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" text-anchor="middle">1408 × 768 px</text>
     <text x="106" y="239" fill="#9aa0ac" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" text-anchor="middle">33 double panels</text>
   </g>
-  <g aria-label="Wall 1, five columns, nine double panels and twelve single panels. Left 90 degree return in column 1; fold between columns 1 and 2.">
+  <g aria-label="Wall 1, five columns, nine double panels and twelve single panels. Left 90 degree return in column 1; corner between columns 1 and 2.">
     <text x="222" y="70" fill="#f3f3f3" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Wall 1</text>
     <text x="222" y="89" fill="#9aa0ac" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" text-anchor="middle">4 front + 1 return</text>
-    <text x="204" y="115" fill="#53daec" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">90° FOLD</text>
+    <text x="204" y="115" fill="#53daec" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">90° CORNER</text>
     <path d="M204 119V127" fill="none" stroke="#53daec" stroke-width="1.5" stroke-dasharray="2 2"/>
     <use href="#single-panel" x="192" y="128" width="12" height="12"/>
     <use href="#single-panel" x="192" y="140" width="12" height="12"/>
@@ -232,10 +232,10 @@
     <text x="660" y="221" fill="#f3f3f3" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" text-anchor="middle">768 × 1024 px</text>
     <text x="660" y="239" fill="#9aa0ac" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" text-anchor="middle">24 double panels</text>
   </g>
-  <g aria-label="Wall 4, five columns, nine double panels and twelve single panels. Right 90 degree return in column 5; fold between columns 4 and 5.">
+  <g aria-label="Wall 4, five columns, nine double panels and twelve single panels. Right 90 degree return in column 5; corner between columns 4 and 5.">
     <text x="746" y="70" fill="#f3f3f3" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Wall 4</text>
     <text x="746" y="89" fill="#9aa0ac" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" text-anchor="middle">4 front + 1 return</text>
-    <text x="764" y="115" fill="#53daec" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">90° FOLD</text>
+    <text x="764" y="115" fill="#53daec" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">90° CORNER</text>
     <path d="M764 119V127" fill="none" stroke="#53daec" stroke-width="1.5" stroke-dasharray="2 2"/>
     <use href="#double-panel" x="716" y="128" width="12" height="24"/>
     <use href="#double-panel" x="716" y="152" width="12" height="24"/>
