@@ -19,7 +19,7 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 
 - `index.html` — homepage and the four linked department sections. Update the gear lists here and replace project-budget placeholders as pricing becomes available.
 - `site.css` — site layout and responsive styles.
-- `assets/led-raster.svg` — downloadable LED wall-size diagram; each cell represents one 128 × 256 px double panel. The wall-size table in `index.html` provides the same dimensions as text.
+- `assets/led-raster.svg` — LED wall-size diagram; cells distinguish 128 × 256 px double panels from 128 × 128 px single corner panels. The wall-size table in `index.html` provides the same dimensions as text.
 - `404.html` — missing-page response.
 - `design-system/` — existing brand reference, shared CSS, and assets. The design-system examples are illustrative, not the conference gear inventory.
 - `scripts/build.sh` — copies only public site files into `_site/`.
@@ -62,19 +62,21 @@ GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages
 
 ## LED raster diagram
 
-Wall dimensions are columns × rows of double panels, each 128 pixels wide × 256 pixels tall. The team confirmed the following layout and revised the inventory to 224 double panels on 2026-09-24:
+The team confirmed the following dimensions on 2026-09-24. Double panels are 128 × 256 px; single panels are 128 × 128 px.
 
-| Wall | Double panels | Pixels (width × height) |
+| Wall | Installed panels | Pixels (width × height) |
 | --- | --- | --- |
-| Left IMAG | 11 × 3 | 1,408 × 768 |
-| Wall 1 | 5 × 3 | 640 × 768 |
-| Wall 2 | 6 × 4 | 768 × 1,024 |
-| Center wall | 20 × 4 | 2,560 × 1,024 |
-| Wall 3 | 6 × 4 | 768 × 1,024 |
-| Wall 4 | 5 × 3 | 640 × 768 |
-| Right IMAG | 11 × 3 | 1,408 × 768 |
+| Left IMAG | 33 double | 1,408 × 768 |
+| Wall 1 | 9 double + 12 single | 640 × 768 |
+| Wall 2 | 24 double | 768 × 1,024 |
+| Center wall | 80 double | 2,560 × 1,024 |
+| Wall 3 | 24 double | 768 × 1,024 |
+| Wall 4 | 9 double + 12 single | 640 × 768 |
+| Right IMAG | 33 double | 1,408 × 768 |
 
-Total active pixels: 7,340,032. The SVG uses a consistent scale for wall sizes with illustrative spacing and alignment; it is not a processor mapping or a physical installation drawing. Keep the SVG, HTML table, and inventory count in sync when dimensions change.
+Walls 1 and 4 each have four front-facing columns and one column returning at 90°. The two columns meeting at each corner contain six single panels each. In the flattened raster, Wall 1's first two columns are singles with the fold between columns 1 and 2; Wall 4's last two columns are singles with the fold between columns 4 and 5. Other walls use double panels throughout.
+
+Total inventory: **212 double + 24 single = 236 physical panels**, equivalent in pixel area to the earlier 224-double-panel layout. Total active pixels remain **7,340,032**. The diagram is a flattened raster with fold markers; wall spacing and vertical alignment are illustrative, not processor mapping positions. Keep the SVG, HTML table, and inventory count in sync when dimensions change.
 
 ## Search and AI crawler opt-out
 

@@ -386,21 +386,9 @@ body {
 }
 
 .led-raster__caption {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px 24px;
   margin-top: 12px;
   color: var(--nv-text-3);
   font-size: 14px;
-}
-
-.led-raster__caption a {
-  flex: 0 0 auto;
-  color: var(--nv-cyan);
-  text-decoration: underline;
-  text-decoration-color: rgb(83 218 236 / 45%);
-  text-underline-offset: 3px;
 }
 
 .led-raster__table {
@@ -414,9 +402,9 @@ body {
   text-align: left;
 }
 
-.led-raster__table .led-raster__wall-column { width: 30%; }
-.led-raster__table .led-raster__grid-column { width: 27%; }
-.led-raster__table .led-raster__resolution-column { width: 43%; }
+.led-raster__table .led-raster__wall-column { width: 27%; }
+.led-raster__table .led-raster__grid-column { width: 36%; }
+.led-raster__table .led-raster__resolution-column { width: 37%; }
 
 .led-raster__table th,
 .led-raster__table td {
@@ -437,11 +425,6 @@ body {
 .led-raster__table tfoot th {
   color: var(--nv-text);
   font-weight: 600;
-}
-
-.led-raster__table td:last-child,
-.led-raster__table tfoot td {
-  white-space: nowrap;
 }
 
 .led-raster__table tfoot th,
@@ -632,9 +615,6 @@ body {
   }
 
   .led-raster__caption {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 6px;
     font-size: 13px;
   }
 
