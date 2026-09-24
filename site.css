@@ -236,6 +236,7 @@ body {
 .system-details {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.6fr);
+  align-items: start;
   gap: var(--s2);
   margin-top: var(--s2);
 }
@@ -260,6 +261,100 @@ body {
 .placeholder {
   margin-top: var(--s2);
   color: var(--nv-text-3);
+}
+
+.gear-list {
+  margin: var(--s1) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gear-item {
+  padding: var(--s1) 0;
+  border-top: 1px solid var(--nv-line);
+}
+
+.gear-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.gear-item__name {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 9px;
+  max-width: none;
+  color: var(--nv-text);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.gear-item__name a,
+.gear-item__resource {
+  color: var(--nv-cyan);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(83 218 236 / 45%);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--ease), text-decoration-color var(--ease);
+}
+
+.gear-item__name a:hover,
+.gear-item__resource:hover,
+.gear-item__name a:focus-visible,
+.gear-item__resource:focus-visible {
+  color: var(--nv-text);
+  text-decoration-color: currentColor;
+}
+
+.gear-item__link-mark {
+  display: inline-block;
+  margin-left: 2px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.gear-item__meta {
+  max-width: none;
+  margin-top: 5px;
+  color: var(--nv-text-3);
+  font-size: var(--fs-small);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.gear-item__resource {
+  font-weight: 600;
+}
+
+.gear-item__quantity {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 1px 8px;
+  color: var(--nv-cyan);
+  background: rgb(83 218 236 / 10%);
+  border: 1px solid rgb(83 218 236 / 35%);
+  border-radius: var(--radius);
+  font-family: var(--ff-cond);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.gear-note {
+  max-width: none;
+  margin-top: var(--s2);
+  padding: 12px 14px;
+  color: var(--nv-text-2);
+  background: var(--nv-ink);
+  border-left: 3px solid var(--nv-cyan);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  font-size: var(--fs-small);
 }
 
 .system-details__budget .placeholder {

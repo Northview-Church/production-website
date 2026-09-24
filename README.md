@@ -1,6 +1,6 @@
 # Northview Production
 
-A static conference gear guide for Northview Church, intended for **https://www.nvprod.us**. Audio, Video, LED, and Lighting have space for gear lists and high-level project budgets. Content is intentionally pending; no equipment or prices are represented as confirmed.
+A static conference gear guide for Northview Church, intended for **https://www.nvprod.us**. Audio, Video, LED, and Lighting list the team-provided equipment, with manufacturer links where the products are identifiable. High-level project budgets are still pending.
 
 Plain HTML and CSS; no JavaScript, package installation, or framework required. The existing Northview design system supplies the branding and photography.
 
@@ -17,7 +17,7 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 
 ## Files and content
 
-- `index.html` — homepage and the four linked department sections. Replace the gear and project-budget placeholders here as content becomes available.
+- `index.html` — homepage and the four linked department sections. Update the gear lists here and replace project-budget placeholders as pricing becomes available.
 - `site.css` — site layout and responsive styles.
 - `404.html` — missing-page response.
 - `design-system/` — existing brand reference, shared CSS, and assets. The design-system examples are illustrative, not the conference gear inventory.
@@ -25,6 +25,10 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 - `.github/workflows/pages.yml` — builds pull requests; deploys `main` through GitHub Pages.
 
 For each department, collect gear model, purpose, quantity where useful, and manufacturer links. For project budgets, include scope, approximate cost or range, pricing date, and whether installation/tax are included. Leave unavailable prices explicitly pending.
+
+Equipment quantities, installed configurations, and roles come from the production team. Product naming and links were checked against manufacturer sources on 2026-09-24. Product pages describe available capabilities, not necessarily the installed configuration. Official specifications or legacy documentation are linked when a suitable product page is unavailable. Clone fixtures remain explicitly labeled, without links that imply they are original-brand products.
+
+Details still to collect: the exact Acuity panel variant (two stripes alone does not distinguish 2X/2M and display variants), fixture manufacturers/model numbers and counts, and project pricing. Do not infer missing quantities or price the installed projects from retail component listings.
 
 The existing styles load Adobe Fonts with Google Fonts and system fallbacks. Confirm the Adobe kit permits `www.nvprod.us` before launch.
 
