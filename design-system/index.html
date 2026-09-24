@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northview Production — design system</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+<style>
+  /* Reference-page chrome only. Not part of the system. */
+  .ds-page { padding: var(--s6) 0 var(--s10); }
+  .ds-section { padding: var(--s4) 0; border-top: 1px solid var(--nv-line); }
+  .ds-section:first-of-type { border-top: 0; }
+  .ds-title { margin-bottom: var(--s2); }
+  .ds-note { font-size: 14px; color: var(--nv-text-3); margin-top: var(--s2); max-width: 80ch; }
+  .ds-row { display: flex; gap: 28px; flex-wrap: wrap; align-items: center; }
+  .ds-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s2); }
+  .ds-grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s2); }
+  .ds-two { display: grid; grid-template-columns: 420px 1fr; gap: var(--s4); align-items: start; }
+  .ds-sw { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--s1); }
+  .sw { height: 120px; border-radius: var(--radius-card); border: 1px solid var(--nv-line); display: flex; flex-direction: column; justify-content: end; padding: 12px; font-size: 13px; }
+  .sw b { font-family: var(--ff-cond); font-size: 17px; display: block; }
+  .sw small { opacity: .8; }
+  .typerow { display: grid; grid-template-columns: 220px 1fr; gap: var(--s2); align-items: baseline; padding: 14px 0; border-bottom: 1px dashed var(--nv-line); }
+  .typerow .m { font-size: 13px; color: var(--nv-text-3); }
+  pre { background: var(--nv-ink); border: 1px solid var(--nv-line); padding: 14px 16px; font-size: 13px; line-height: 1.5; overflow: auto; color: var(--nv-text-2); margin: var(--s1) 0 0; border-radius: 2px; }
+  .hero-demo { position: relative; overflow: hidden; padding: var(--s6) var(--s4); border: 1px solid var(--nv-line); border-radius: var(--radius-card); }
+  .hero-demo .g { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--s4); align-items: end; }
+  .toc { display: flex; gap: 20px; flex-wrap: wrap; font-family: var(--ff-cond); font-weight: 700; font-size: 17px; margin-top: var(--s2); }
+  .toc a { color: var(--nv-text-2); border-bottom: 1px solid var(--nv-line); }
+  @media (max-width: 900px) { .ds-grid3, .ds-grid4 { grid-template-columns: 1fr 1fr; } .ds-two { grid-template-columns: 1fr; } .ds-sw { grid-template-columns: repeat(3, 1fr); } .hero-demo .g { grid-template-columns: 1fr; } .typerow { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap ds-page">
+
+  <header>
+    <a class="brand" href="#"><img src="assets/logos/northview-mark-white.svg" alt="Northview"><span class="brand__word">Northview<span>Production</span></span></a>
+    <h1 style="margin-top:var(--s4)">Design<br><span class="accent">system</span></h1>
+    <p style="margin-top:var(--s2);font-size:19px">Dark by default. Built on the Northview Church web brand: FF Good Web Pro, square buttons, topo backdrop, diagonal slab. Production adds a blue-black base and one thing the church site never needs: a live state.</p>
+    <nav class="toc"><a href="#color">Color</a><a href="#type">Type</a><a href="#space">Spacing</a><a href="#buttons">Buttons</a><a href="#status">Status</a><a href="#cards">Cards</a><a href="#photo">Photography</a><a href="#forms">Forms</a><a href="#layout">Layout</a><a href="#logo">Logo</a></nav>
+  </header>
+
+  <!-- COLOR -->
+  <section class="ds-section" id="color">
+    <div class="label label--accent ds-title">Color</div>
+    <div class="ds-sw">
+      <div class="sw" style="background:#171a21"><b>Base</b><small>#171a21 · --nv-black</small></div>
+      <div class="sw" style="background:#10131a"><b>Recessed</b><small>#10131a · --nv-ink</small></div>
+      <div class="sw" style="background:#1e222b"><b>Card</b><small>#1e222b · --nv-surface</small></div>
+      <div class="sw" style="background:#2a2f3a"><b>Raised</b><small>#2a2f3a · --nv-raised</small></div>
+      <div class="sw" style="background:#3a404d"><b>Line</b><small>#3a404d · --nv-line</small></div>
+      <div class="sw" style="background:#9aa0ac;color:#171a21"><b>Muted text</b><small>#9aa0ac · --nv-text-3</small></div>
+      <div class="sw" style="background:#d3d3d3;color:#171a21"><b>Text 2</b><small>#d3d3d3 · --nv-text-2</small></div>
+      <div class="sw" style="background:#f3f3f3;color:#171a21"><b>Text</b><small>#f3f3f3 · --nv-text</small></div>
+      <div class="sw" style="background:#53daec;color:#171a21"><b>Cyan</b><small>#53daec · --nv-cyan</small></div>
+      <div class="sw" style="background:#4bbdb9;color:#171a21"><b>Teal</b><small>#4bbdb9 · --nv-teal</small></div>
+      <div class="sw" style="background:#3d5ba8;color:#fff"><b>Mark blue</b><small>#3d5ba8 · logo only</small></div>
+      <div class="sw" style="background:#ff3b30;color:#fff"><b>Tally</b><small>#ff3b30 · LIVE only</small></div>
+      <div class="sw" style="background:#f0ad4e;color:#171a21"><b>Warn</b><small>#f0ad4e · open, pending</small></div>
+      <div class="sw" style="background:#d9534f;color:#fff"><b>Error</b><small>#d9534f · --nv-error</small></div>
+      <div class="sw" style="background:#5cb85c;color:#171a21"><b>Success</b><small>#5cb85c · --nv-success</small></div>
+      <div class="sw" style="background:#00112b;color:#fff"><b>Navy</b><small>#00112b · wordmark on light only</small></div>
+    </div>
+    <p class="ds-note">The surface ramp is a blue-black tinted toward Northview navy. Every step is one tone apart so hierarchy holds without shadows. Red means on air and nothing else. Errors use Northview's own danger red so the two never get confused.</p>
+  </section>
+
+  <!-- TYPE -->
+  <section class="ds-section" id="type">
+    <div class="label label--accent ds-title">Type · FF Good Web Pro (Typekit qqn7fdp)</div>
+    <div class="typerow"><div class="m">.display · Condensed 700 · 112/1 · uppercase</div><div class="display">Behind every gathering</div></div>
+    <div class="typerow"><div class="m">h1 · Condensed 700 · 88/1 · uppercase</div><h1>Schedule</h1></div>
+    <div class="typerow"><div class="m">h2 · Condensed 700 · 64/1 · uppercase</div><h2>This weekend at Carmel</h2></div>
+    <div class="typerow"><div class="m">h3 · Condensed 700 · 34/1.05 · sentence case</div><h3>Mixing the room</h3></div>
+    <div class="typerow"><div class="m">h4 · Condensed 700 · 22</div><h4>Front of house</h4></div>
+    <div class="typerow"><div class="m">.nav · Condensed 700 · 21 · +0.5px</div><div class="nav"><a aria-current="page">Serve</a><a>Teams</a><a>Training</a><a>Schedule</a></div></div>
+    <div class="typerow"><div class="m">.label · Condensed 700 · 15 · +2.67px · uppercase</div><div><span class="label">Locations</span> &nbsp; <span class="label label--accent">This weekend</span></div></div>
+    <div class="typerow"><div class="m">p · Good 400 · 17/1.5 · max 62ch</div><p>Front of house is the mix the room hears. Broadcast is the mix the campuses and the livestream hear. They are different jobs, and on most weekends they are different people.</p></div>
+    <div class="typerow"><div class="m">.meta · Good 400 italic · 14</div><span class="meta">Orientation · 90 minutes</span></div>
+    <div class="typerow"><div class="m">.timecode · Condensed 400 · 15 · +1.5px · tabular</div><span class="timecode">09:00:14:22 &nbsp; CAM 2 · WIDE</span></div>
+    <p class="ds-note">Headings above h3 are uppercase, as on northviewchurch.us. h3 and below are sentence case. Never accent a single word in a heading except in the display line, where cyan marks the noun that matters. Body copy stays on --nv-text-2; --nv-text is reserved for headings and emphasis.</p>
+  </section>
+
+  <!-- SPACING -->
+  <section class="ds-section" id="space">
+    <div class="label label--accent ds-title">Spacing · 12px base</div>
+    <div class="ds-row" style="align-items:end">
+      <div><div style="height:12px;width:12px;background:var(--nv-cyan)"></div><div class="meta">--s1 12</div></div>
+      <div><div style="height:24px;width:24px;background:var(--nv-cyan)"></div><div class="meta">--s2 24</div></div>
+      <div><div style="height:36px;width:36px;background:var(--nv-cyan)"></div><div class="meta">--s3 36</div></div>
+      <div><div style="height:48px;width:48px;background:var(--nv-cyan)"></div><div class="meta">--s4 48</div></div>
+      <div><div style="height:72px;width:72px;background:var(--nv-cyan)"></div><div class="meta">--s6 72</div></div>
+      <div><div style="height:96px;width:96px;background:var(--nv-cyan)"></div><div class="meta">--s8 96</div></div>
+      <div><div style="height:120px;width:120px;background:var(--nv-cyan)"></div><div class="meta">--s10 120</div></div>
+    </div>
+    <p class="ds-note">Sections use --s10 on desktop and --s6 on mobile. Card padding is --s2. Grid gaps are --s2. Content width is 1240px with --s3 gutters. Corners: buttons, chips, inputs and pills are square. Cards are 6px.</p>
+  </section>
+
+  <!-- BUTTONS -->
+  <section class="ds-section" id="buttons">
+    <div class="label label--accent ds-title">Buttons</div>
+    <div class="ds-row">
+      <a class="btn btn--offset" href="#">Join a team <i class="arr"></i></a>
+      <a class="btn btn--offset on-cyan" href="#">Sign up to shadow <i class="arr"></i></a>
+      <a class="btn btn--cyan" href="#">Fill an open slot <i class="arr"></i></a>
+      <a class="btn btn--solid" href="#">Watch <i class="arr"></i></a>
+      <a class="btn" href="#">Details <i class="arr"></i></a>
+      <a class="btn btn--ghost" href="#">All training <i class="arr"></i></a>
+      <a class="btn btn--text" href="#">See the schedule <i class="arr"></i></a>
+      <a class="btn btn--cyan btn--small" href="#">Take it <i class="arr"></i></a>
+      <button class="btn" disabled>Disabled <i class="arr"></i></button>
+    </div>
+<pre>&lt;a class="btn btn--offset" href="…"&gt;Join a team &lt;i class="arr"&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a class="btn btn--cyan"   href="…"&gt;Fill an open slot &lt;i class="arr"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+    <p class="ds-note">Offset frame is the hero button, one per screen. Cyan solid is the primary in-page action. Outline for secondary, ghost for tertiary, text link for inline. On hover only the arrow moves: 22px to 34px over 300ms. Nothing else animates.</p>
+  </section>
+
+  <!-- STATUS -->
+  <section class="ds-section" id="status">
+    <div class="label label--accent ds-title">Status</div>
+    <div class="ds-row">
+      <span class="status status--live"><i></i>Live</span>
+      <span class="status status--standby"><i></i>Standby</span>
+      <span class="status status--ok"><i></i>Confirmed</span>
+      <span class="status"><i></i>Off</span>
+      <span class="status status--error"><i></i>Failed</span>
+      <span style="width:12px"></span>
+      <span class="chip">Audio <b>4/4</b></span>
+      <span class="chip chip--need">Lighting <b>1/2</b></span>
+      <span style="width:12px"></span>
+      <button class="pill" aria-pressed="true">Carmel</button>
+      <button class="pill">Fishers</button>
+      <button class="pill">All campuses</button>
+    </div>
+    <p class="ds-note">Status pills carry a dot and a word. Live is the only one with a glow. Count chips show staffed over needed and switch to warn when short. Pills are filter toggles, filled when on.</p>
+  </section>
+
+  <!-- CARDS -->
+  <section class="ds-section" id="cards">
+    <div class="label label--accent ds-title">Cards</div>
+    <div class="ds-grid3">
+      <a class="card card--accent" href="#">
+        <div class="card__media"><img src="assets/photos/carmel-auditorium.jpg" alt="" style="object-position:50% 52%"></div>
+        <div class="card__body"><div class="card__kicker">Orientation · 90 minutes</div><div class="card__title">Production 101</div><div class="card__meta"><span>Sat Oct 4</span><span>Carmel, Room 210</span></div></div>
+      </a>
+      <a class="card" href="#">
+        <div class="card__body"><div class="card__kicker">Gear guide</div><div class="card__title">Allen &amp; Heath dLive S7000</div><p style="font-size:15px;margin-top:10px">Scene recall, the Sunday show file, and what not to touch on the surface.</p><div class="card__meta"><span>Updated Sept 12</span></div></div>
+      </a>
+      <div class="card card--live">
+        <div class="card__body"><div class="ds-row" style="justify-content:space-between"><div class="card__title">9:00 service</div><span class="status status--live"><i></i>Live</span></div><div class="card__meta"><span>Carmel</span><span>Run of show · 74 min</span></div></div>
+      </div>
+    </div>
+    <div class="ds-grid4" style="margin-top:var(--s2)">
+      <a class="tile" href="#"><svg class="tile__icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M7 16V9M11 16v-4M15 16V7M19 16v-6"/></svg><div><h3>Audio</h3><p>Front of house, monitors, broadcast mix.</p><div class="tile__count">12 volunteers · Carmel</div></div></a>
+      <a class="tile" href="#"><svg class="tile__icon" viewBox="0 0 24 24"><rect x="3" y="7" width="13" height="10" rx="1"/><path d="m16 11 5-3v8l-5-3"/></svg><div><h3>Cameras</h3><p>Handheld, jib, and the wide at the back.</p><div class="tile__count">18 volunteers · Carmel</div></div></a>
+      <div class="slot slot--mine"><div><div class="slot__pos">FOH audio</div><div class="slot__who">You</div></div><svg class="slot__check" viewBox="0 0 24 24"><path d="m5 13 4 4L19 7"/></svg></div>
+      <div class="slot slot--open"><div><div class="slot__pos">Lighting</div><div class="slot__who">Open</div></div><a class="btn btn--cyan btn--small" href="#">Take it <i class="arr"></i></a></div>
+    </div>
+    <p class="ds-note">Cards keep Northview's 6px radius and thick bottom border. The border is the only place a card takes color: cyan for featured, red for live, raised grey otherwise. Tiles are for teams. Slots are for positions in a service; the left edge is the state.</p>
+  </section>
+
+  <!-- PHOTOGRAPHY -->
+  <section class="ds-section" id="photo">
+    <div class="label label--accent ds-title">Photography</div>
+    <div class="ds-two" style="grid-template-columns:1fr 1fr">
+      <div class="viewfinder">
+        <img src="assets/photos/carmel-auditorium.jpg" alt="Carmel auditorium from the camera platform" style="object-position:50% 40%">
+        <div class="viewfinder__frame"></div>
+        <span class="status status--live viewfinder__tl"><i></i>Live</span>
+        <span class="viewfinder__tr">CAM 2 · WIDE</span>
+        <span class="timecode viewfinder__br">09:00:14:22</span>
+      </div>
+      <div class="band" style="min-height:280px">
+        <img src="assets/photos/carmel-auditorium.jpg" alt="" style="object-position:50% 38%">
+        <div class="band__wash"></div>
+        <div class="band__in"><div><h2 style="font-size:44px">Two hours on a Sunday.</h2><p style="margin-top:var(--s1)">Most volunteers serve one weekend a month.</p></div><a class="btn btn--offset on-cyan" href="#">Sign up <i class="arr"></i></a></div>
+      </div>
+    </div>
+    <p class="ds-note">Shoot the room from where the team stands: the camera platform, front of house, the lighting desk. Rooms lit for a service, no posed people. Two treatments: the viewfinder for a single featured photo, and the band for a photo behind a call to action. Both add a dark wash from --nv-ink so type stays legible. No color grading beyond that; the rig is already cool-toned.</p>
+  </section>
+
+  <!-- FORMS -->
+  <section class="ds-section" id="forms">
+    <div class="label label--accent ds-title">Forms &amp; tables</div>
+    <div class="ds-two">
+      <form style="display:grid;gap:14px" onsubmit="return false">
+        <div class="field"><label for="f1">Name</label><input id="f1" value="Jordan Ellis"></div>
+        <div class="field"><label for="f2">Campus</label><select id="f2"><option>Carmel</option><option>Fishers</option></select></div>
+        <div class="field"><label for="f3">Team I'd like to try</label><input id="f3" placeholder="Cameras"><div class="field__help">You can change this later.</div></div>
+        <div class="field field--error"><label for="f4">Email</label><input id="f4" value="jordan@"><div class="field__help">Enter a full email address, like name@example.com.</div></div>
+        <button class="btn btn--cyan" style="justify-self:start">Send it <i class="arr"></i></button>
+      </form>
+      <table class="table">
+        <tr><th>Service</th><th>Position</th><th>Volunteer</th><th>Status</th></tr>
+        <tr><td>Sat 5:00</td><td>FOH audio</td><td>Marcus T.</td><td><span class="status status--ok"><i></i>Confirmed</span></td></tr>
+        <tr class="is-open"><td>Sat 5:00</td><td>Lighting</td><td style="color:var(--nv-text-3)">Open</td><td><a class="btn btn--text" style="font-size:14px" href="#">Take this slot <i class="arr"></i></a></td></tr>
+        <tr><td>Sun 9:00</td><td>Cam 2</td><td>Priya N.</td><td><span class="status status--ok"><i></i>Confirmed</span></td></tr>
+        <tr><td>Sun 9:00</td><td>ProPresenter</td><td>Sam K.</td><td><span class="status status--standby"><i></i>Pending</span></td></tr>
+      </table>
+    </div>
+    <p class="ds-note">Inputs sit on --nv-ink with a 2px radius, matching Northview's input radius. Focus is the Northview cyan ring. Error text says what to do, not just that something is wrong. Open rows in tables get the warn tint so they can be scanned.</p>
+  </section>
+
+  <!-- LAYOUT -->
+  <section class="ds-section" id="layout">
+    <div class="label label--accent ds-title">Layout devices</div>
+    <div class="hero-demo topo">
+      <div class="slab"></div>
+      <div class="g">
+        <div><div class="display" style="font-size:72px">Behind every <span class="accent">gathering.</span></div><p style="margin-top:var(--s2)">Topo backdrop at 6%, diagonal slab with a cyan edge, and the offset button. That is the whole hero kit.</p><div class="ds-row" style="margin-top:var(--s2)"><a class="btn btn--offset" href="#">Join a team <i class="arr"></i></a></div></div>
+        <div class="viewfinder" style="aspect-ratio:16/10"><img src="assets/photos/carmel-auditorium.jpg" alt="" style="object-position:50% 45%"><div class="viewfinder__frame"></div></div>
+      </div>
+    </div>
+<pre>&lt;section class="section topo"&gt;
+  &lt;div class="slab"&gt;&lt;/div&gt;
+  &lt;div class="wrap"&gt;…&lt;/div&gt;
+&lt;/section&gt;</pre>
+    <p class="ds-note">Alternate .section and .section--recessed down the page so the eye can find breaks without rules. Use .topo on at most two sections per page. The slab belongs to the hero only.</p>
+    <div style="margin-top:var(--s4)">
+      <header class="hdr" style="border:1px solid var(--nv-line);padding:0 var(--s2)">
+        <a class="brand" href="#"><img src="assets/logos/northview-mark-white.svg" alt="Northview"><span class="brand__word">Northview<span>Production</span></span></a>
+        <nav class="nav"><a aria-current="page">Serve</a><a>Teams</a><a>Training</a><a>Schedule</a><a>Gear</a><a>Contact</a></nav>
+        <div class="ds-row" style="gap:20px"><svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><a class="btn btn--ghost btn--small" href="#">Log in</a></div>
+      </header>
+    </div>
+  </section>
+
+  <!-- LOGO -->
+  <section class="ds-section" id="logo">
+    <div class="label label--accent ds-title">Logo</div>
+    <div class="ds-grid3">
+      <div style="background:var(--nv-ink);padding:var(--s3);border-radius:var(--radius-card)"><img src="assets/logos/northview-logo-horizontal-white-blue.svg" alt="Northview horizontal logo, white with blue mark" style="width:100%"><div class="meta" style="margin-top:var(--s1)">Horizontal, white + blue mark. Use on dark.</div></div>
+      <div style="background:#f3f3f3;padding:var(--s3);border-radius:var(--radius-card)"><img src="assets/logos/northview-logo-horizontal-navy.svg" alt="Northview horizontal logo, navy" style="width:100%"><div class="meta" style="margin-top:var(--s1);color:#555">Horizontal, navy. Light backgrounds only.</div></div>
+      <div style="background:var(--nv-ink);padding:var(--s3);border-radius:var(--radius-card)"><a class="brand" href="#"><img src="assets/logos/northview-mark-white.svg" alt="" style="height:44px"><span class="brand__word" style="font-size:32px">Northview<span style="font-size:15px">Production</span></span></a><div class="meta" style="margin-top:var(--s1)">Production lockup: mark, wordmark set in FF Good Condensed, cyan department line.</div></div>
+    </div>
+    <p class="ds-note">The Production lockup is typeset, not a new logo. Wordmark is FF Good Condensed 700 uppercase at 26px, department line at 13px with 3px tracking in cyan. Keep the mark at least 28px tall. Do not recolor the mark.</p>
+  </section>
+
+</div>
+</body>
+</html>

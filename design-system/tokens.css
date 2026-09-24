@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Northview Production — design tokens
+   Dark by default. Derived from the Northview Church web brand
+   (northviewchurch.us, theme NVC2021) with a production spin.
+   ========================================================================== */
+
+/* Fonts: Northview's Typekit kit. FF Good Web Pro + FF Good Web Pro Condensed.
+   Barlow is the open fallback if the kit is unavailable on a given domain. */
+@import url("https://use.typekit.net/qqn7fdp.css");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:ital,wght@0,400;0,600;1,400&display=swap");
+
+:root {
+  /* --- Surfaces (blue-black ramp, tinted toward Northview navy #00112b) --- */
+  --nv-black:   #171a21;  /* page base */
+  --nv-ink:     #10131a;  /* recessed sections, inputs, footer */
+  --nv-surface: #1e222b;  /* cards */
+  --nv-raised:  #2a2f3a;  /* raised elements, card bottom border */
+  --nv-line:    #3a404d;  /* borders, dividers */
+
+  /* --- Text --- */
+  --nv-text:    #f3f3f3;  /* Northview lightest */
+  --nv-text-2:  #d3d3d3;  /* Northview light: body on dark */
+  --nv-text-3:  #9aa0ac;  /* muted meta */
+
+  /* --- Accents --- */
+  --nv-cyan:    #53daec;  /* Northview primary: actions, active nav, focus */
+  --nv-teal:    #4bbdb9;  /* Northview secondary: rarely, for variety in data */
+  --nv-blue:    #3d5ba8;  /* logo mark only */
+  --nv-navy:    #00112b;  /* logo wordmark on light; never a surface */
+
+  /* --- State --- */
+  --nv-tally:   #ff3b30;  /* LIVE / on air. Nothing else. */
+  --nv-warn:    #f0ad4e;  /* open slot, pending */
+  --nv-error:   #d9534f;  /* Northview danger */
+  --nv-success: #5cb85c;  /* Northview success */
+
+  /* --- Type --- */
+  --ff-body: "ff-good-web-pro", "Barlow", sans-serif;
+  --ff-cond: "ff-good-web-pro-condensed", "Barlow Condensed", sans-serif;
+
+  --fs-display: 112px;   /* condensed 700, uppercase, lh 1 */
+  --fs-h1:      88px;    /* condensed 700, uppercase, lh 1 */
+  --fs-h2:      64px;    /* condensed 700, uppercase, lh 1 */
+  --fs-h3:      34px;    /* condensed 700, sentence case, lh 1.05 */
+  --fs-h4:      22px;    /* condensed 700, sentence case */
+  --fs-nav:     21px;    /* condensed 700, +0.5px */
+  --fs-body:    17px;    /* good 400, lh 1.5 */
+  --fs-small:   15px;
+  --fs-meta:    14px;    /* good 400 italic, muted */
+  --fs-label:   15px;    /* condensed 700, uppercase, +2.67px (Northview footer headings) */
+
+  /* --- Spacing: 12px base, as on northviewchurch.us --- */
+  --s1: 12px; --s2: 24px; --s3: 36px; --s4: 48px;
+  --s6: 72px; --s8: 96px; --s10: 120px; --s12: 144px;
+
+  /* --- Shape --- */
+  --radius:      0px;   /* buttons, chips, inputs: square, as on Northview */
+  --radius-card: 6px;   /* cards */
+  --offset:      7px;   /* offset-frame distance (Northview c-btn--offset-border) */
+
+  /* --- Layout --- */
+  --measure: 62ch;
+  --wrap: 1240px;
+  --gutter: var(--s3);
+
+  /* --- Motion --- */
+  --ease: 300ms ease-in-out;   /* Northview's button transition */
+
+  /* --- Focus --- */
+  --focus: 0 0 0 3px rgba(83, 218, 236, 0.6);  /* Northview --focus-state-shadow */
+}
+
+@media (max-width: 760px) {
+  :root {
+    --fs-display: 64px;
+    --fs-h1: 56px;
+    --fs-h2: 44px;
+    --fs-h3: 28px;
+    --gutter: 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--nv-black);
+  color: var(--nv-text);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+p { margin: 0; color: var(--nv-text-2); max-width: var(--measure); }
+p strong { color: var(--nv-text); font-weight: 600; }
+
+.display, h1, h2, h3, h4 {
+  font-family: var(--ff-cond);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: var(--nv-text);
+}
+.display, h1 { text-transform: uppercase; letter-spacing: -0.005em; }
+.display { font-size: var(--fs-display); }
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); text-transform: uppercase; }
+h3 { font-size: var(--fs-h3); line-height: 1.05; }
+h4 { font-size: var(--fs-h4); }
+.accent { color: var(--nv-cyan); }
+
+.meta { font-size: var(--fs-meta); font-style: italic; color: var(--nv-text-3); }
+.label {
+  font-family: var(--ff-cond); font-weight: 700; font-size: var(--fs-label);
+  letter-spacing: 2.67px; text-transform: uppercase; color: var(--nv-text);
+}
+.label--accent { color: var(--nv-cyan); }
+.timecode {
+  font-family: var(--ff-cond); font-weight: 400; font-size: 15px;
+  letter-spacing: 1.5px; font-variant-numeric: tabular-nums; color: var(--nv-text-2);
+}
+
+:focus-visible { outline: none; box-shadow: var(--focus); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
