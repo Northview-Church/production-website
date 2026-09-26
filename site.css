@@ -822,6 +822,99 @@ body {
   }
 }
 
+.mic-setups {
+  margin-top: var(--s3);
+  padding: var(--s2);
+  background: var(--nv-surface);
+  border-radius: var(--radius-card);
+  border-bottom: 4px solid var(--nv-cyan);
+}
+
+.mic-setups h3 {
+  margin-bottom: var(--s2);
+  font-size: 26px;
+}
+
+.mic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s2);
+}
+
+.mic-card {
+  min-width: 0;
+  padding: var(--s2);
+  background: var(--nv-ink);
+  border-radius: var(--radius-card);
+  border-bottom: 4px solid var(--nv-raised);
+}
+
+.mic-card h4 {
+  margin: 0;
+  color: var(--nv-text);
+  font-family: var(--ff-cond);
+  font-size: 20px;
+  line-height: 1.05;
+}
+
+.mic-card dl {
+  display: grid;
+  margin: var(--s2) 0 0;
+}
+
+.mic-card dl > div {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.45fr) minmax(0, 1fr);
+  gap: var(--s2);
+  padding: var(--s1) 0;
+  border-top: 1px solid var(--nv-line);
+}
+
+.mic-card dl > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.mic-card dt {
+  color: var(--nv-text-3);
+  font-family: var(--ff-cond);
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+
+.mic-card dd {
+  margin: 0;
+  color: var(--nv-text-2);
+  font-size: var(--fs-meta);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.mic-card a {
+  color: var(--nv-cyan);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(83 218 236 / 45%);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.mic-card a:hover,
+.mic-card a:focus-visible {
+  color: var(--nv-text);
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 760px) {
+  .mic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mic-card dl > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

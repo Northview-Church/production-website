@@ -66,9 +66,11 @@ Team-provided project figures: camera project **$325,000**, including cameras, l
 
 ## Audio content notes
 
-Audio quantities distinguish loudspeakers and keyboards from wireless/preamp channels. The 20 M’elodie main-array speakers (10 per side) exclude front fills, whose quantity is unspecified. UPM-1P fill quantity is also unspecified. UPQ is listed as three outfills without a model suffix. The team confirmed two Rio3224-D2 and one Rio1608-D2 stage boxes. Axient generation remains unspecified.
+Audio quantities distinguish loudspeakers and keyboards from wireless/preamp channels. The 20 M’elodie main-array speakers (10 per side) exclude front fills, whose quantity is unspecified. UPM-1P fill quantity is also unspecified. UPQ is listed as three outfills without a model suffix. The team confirmed two Rio3224-D2 and one Rio1608-D2 stage boxes. The AD2, ADX2FD, and ADX1 transmitter details confirm Axient Digital.
 
 Pending clarification from the team: whether “Meyer HP 6 subs 700s” means six 700-HP subwoofers; the exact Neve model (the team confirmed 16 channels of analog-to-Dante input); and the truncated “Floor pocket powe” line. Until confirmed, the page uses general Meyer subwoofer and Neve analog-to-Dante input names and omits the incomplete floor-pocket item.
+
+The microphone/input cards record source assignments, not inventory quantities. No tom/overhead or wireless-mic counts, capsule colors, headset connectors, Warm Audio WA-DI active/passive variant, guitar processor models, or Ableton version are inferred. DVS means Dante Virtual Soundcard. Preserve the supplied SM7B hi-hat assignment.
 
 ## Camera setup content
 
