@@ -553,6 +553,56 @@ body {
   font-weight: 600;
 }
 
+.system-details__budget .project-budget__amount {
+  margin-top: var(--s2);
+  color: var(--nv-text);
+  font-family: var(--ff-cond);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.system-details__budget .project-budget__meta {
+  margin-top: var(--s1);
+  color: var(--nv-text-3);
+  font-size: var(--fs-small);
+  line-height: 1.45;
+}
+
+.system-details__budget .project-budget__breakdown {
+  display: grid;
+  gap: var(--s1);
+  margin: var(--s2) 0 0;
+}
+
+.project-budget__breakdown > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--s2);
+}
+
+.project-budget__breakdown dt {
+  color: var(--nv-text-2);
+}
+
+.project-budget__breakdown dd {
+  margin: 0;
+  color: var(--nv-text);
+  font-weight: 600;
+  text-align: right;
+}
+
+.project-budget__total {
+  padding-top: var(--s1);
+  border-top: 1px solid var(--nv-line);
+}
+
+.project-budget__total dt,
+.project-budget__total dd {
+  color: var(--nv-text);
+  font-weight: 700;
+}
+
 .site-footer {
   padding: var(--s3) 0;
   background: var(--nv-ink);

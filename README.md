@@ -60,6 +60,10 @@ The apex `nvprod.us` is separate and is not required for this site. If it should
 
 GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
+## Project budgets
+
+Team-provided project figures: camera project **$325,000**, including cameras, lenses, and Cyanview; LED panels **$81,000** plus processing **$7,000**, totaling **$88,000**; lighting **$27,000**. These are project figures, not current manufacturer quotes. The camera figure does not state the cost of the entire Video system. Lighting scope was not further itemized. Audio pricing is pending.
+
 ## Audio content notes
 
 Audio quantities distinguish loudspeakers and keyboards from wireless/preamp channels. The 20 M’elodie main-array speakers (10 per side) exclude front fills, whose quantity is unspecified. UPM-1P fill quantity is also unspecified. UPQ is listed as three outfills without a model suffix. The team confirmed two Rio3224-D2 and one Rio1608-D2 stage boxes. Axient generation remains unspecified.
