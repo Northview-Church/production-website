@@ -60,6 +60,12 @@ The apex `nvprod.us` is separate and is not required for this site. If it should
 
 GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site), [Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
+## Audio content notes
+
+Audio quantities distinguish loudspeakers and keyboards from wireless/preamp channels. The 20 M’elodie main-array speakers (10 per side) exclude front fills, whose quantity is unspecified. UPM-1P fill quantity is also unspecified. UPQ is listed as three outfills without a model suffix. The team confirmed two Rio3224-D2 and one Rio1608-D2 stage boxes. Axient generation remains unspecified.
+
+Pending clarification from the team: whether “Meyer HP 6 subs 700s” means six 700-HP subwoofers; the exact Neve model (the team confirmed 16 channels of analog-to-Dante input); and the truncated “Floor pocket powe” line. Until confirmed, the page uses general Meyer subwoofer and Neve analog-to-Dante input names and omits the incomplete floor-pocket item.
+
 ## Camera setup content
 
 The camera-by-camera inventory supersedes the earlier camera total: six RED KOMODO-X bodies and one original RED KOMODO 6K. Cam 4's “KOMODO, X” is interpreted as KOMODO-X. Camera bodies are listed only in the seven camera setups, not duplicated in the Video equipment list.

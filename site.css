@@ -254,6 +254,12 @@ body {
   font-size: 26px;
 }
 
+.system-details__gear .audio-group {
+  margin: var(--s2) 0 0;
+  color: var(--nv-cyan);
+  font-size: 20px;
+}
+
 .system-details__budget {
   border-bottom-color: var(--nv-cyan);
 }
