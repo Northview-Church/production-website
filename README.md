@@ -1,6 +1,6 @@
 # Northview Production
 
-A static conference gear guide for Northview Church, intended for **https://www.nvprod.us**. Audio, Video, LED, and Lighting list the team-provided equipment, with manufacturer links where the products are identifiable. High-level project budgets are still pending.
+A static conference gear guide for Northview Church, intended for **https://www.nvprod.us**. Audio, Video, LED, Lighting, and Networking list the team-provided equipment, with manufacturer links where the products are identifiable. High-level project budgets are still pending.
 
 Plain HTML and CSS; no JavaScript, package installation, or framework required. The existing Northview design system supplies the branding and photography.
 
@@ -17,7 +17,7 @@ Open http://127.0.0.1:8766. Re-run the build after editing source files, then re
 
 ## Files and content
 
-- `index.html` — homepage and the four linked department sections. Update the gear lists here and replace project-budget placeholders as pricing becomes available.
+- `index.html` — homepage and the five linked department sections. Update the gear lists here and replace project-budget placeholders as pricing becomes available.
 - `site.css` — site layout and responsive styles.
 - `assets/led-raster.svg` — LED wall-size diagram; cells distinguish 128 × 256 px double panels from 128 × 128 px single corner panels. The wall-size table in `index.html` provides the same dimensions as text.
 - `404.html` — missing-page response.
@@ -42,7 +42,7 @@ https://github.com/Northview-Church/production-website/settings/pages
 2. Merge the site setup into `main`. The Pages workflow deploys automatically. For a retry, use **Actions → Build and deploy GitHub Pages → Run workflow** on `main`.
 3. Under **Custom domain**, save `www.nvprod.us` **before changing DNS**. With this Actions workflow, GitHub uses this setting, not a `CNAME` file.
 4. Configure DNS as below, wait for GitHub's DNS check and certificate provisioning, then enable **Enforce HTTPS**.
-5. Verify `https://www.nvprod.us`, the four section links, and a nonexistent URL to check the 404 page.
+5. Verify `https://www.nvprod.us`, the five section links, and a nonexistent URL to check the 404 page.
 
 The GitHub-provided URL before a custom domain is configured is https://northview-church.github.io/production-website/.
 
@@ -138,3 +138,9 @@ RED's historical price changes must remain visible: KOMODO-X launched May 16, 20
 Use “integrator” for the company sourcing and installing church AV gear. Public budget cards emphasize purchasing options and in-house work, with concise scope notes. The user requested removal of the expandable estimate breakdowns and vendor-specific pricing examples; retain research here for provenance without publishing those breakdowns. Do not describe the lighting retail benchmark as an integrator quote or the camera potential savings as realized.
 
 The team confirmed the Neve input system as the 1073OPX, with 16 input channels total and Dante connectivity. Use the supplied manufacturer URL: https://www.ams-neve.com/outboard/1073-range/1073opx/ .
+
+## Networking inventory
+
+The team-provided UniFi inventory screenshots identify 17 devices: one UDM-Pro-Max, one USW-Pro-Aggregation, ten USW-Pro-Max-24 switches, three USW-Pro-Max-48 switches, one USP-RPS, and one U7 Pro XGS. The ten 24-port rows are Broadcast Audio, Stage Lighting, FOH Audio, Stage Keys, Video Desk, Atrium, Stage Racks, Video Rack 4, FOH Lighting 24, and Stage Drums. The three 48-port rows are FOH Lighting 48, Catwalk, and Video Rack 3. Switch PoE variants are not shown; do not infer them. The public section aggregates model quantities and high-level roles. No networking project budget has been supplied.
+
+Manufacturer names and links checked September 27, 2026. Ubiquiti currently names USW-Pro-Aggregation “Hi-Capacity Aggregation”; retain the SKU for recognition. USP-RPS is a redundant power system, not a UPS. Source screenshots and detailed uplink/port topology are not site assets.
