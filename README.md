@@ -62,7 +62,7 @@ GitHub's instructions: [custom domains and DNS](https://docs.github.com/en/pages
 
 ## Project budgets
 
-Team-provided project figures: camera project **$325,000**, including cameras, lenses, and Cyanview; LED panels **$81,000** plus processing **$7,000**, totaling **$88,000**; lighting **$27,000**. These are project figures, not current manufacturer quotes. The camera figure does not state the cost of the entire Video system. Lighting scope was not further itemized. Audio pricing is pending.
+Team-provided project figures: camera integrator project **$325,000**, including cameras, lenses, and Cyanview; factory-direct LED panels **$81,000** plus processing **$7,000**, totaling **$88,000**, with a separate integration quote of **$1,000,000**; lighting fixtures **$27,000**, purchased directly. The integration quote is not added to the factory-direct total. These are team-provided figures, not current manufacturer quotes. The camera figure does not state the cost of the entire Video system. Audio pricing is pending.
 
 ## Audio content notes
 
