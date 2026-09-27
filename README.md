@@ -111,3 +111,9 @@ The original reference remains in `design-system/index.html`, with its specifica
 ```sh
 python3 -m http.server 8767 --bind 127.0.0.1 --directory design-system
 ```
+
+## In-house purchase comparisons
+
+LED: the team confirmed that the $1,000,000 integration quote was for comparable scale and scope. Against the reported $88,000 panels/processing purchase, the difference is $912,000 (91.2%). Other in-house costs have not been itemized, so this is a purchase-cost comparison rather than a fully costed net-project saving.
+
+Lighting: 36 K20-style washes, 26 Aura-style washes, 28 two-cell blinders, and 32 Atomic-style strobes (122 fixtures), purchased for $27,000. The September 26, 2026 retail benchmark uses Claypaky A.leda B-EYE K20 at $8,396 (B&H), Martin MAC Aura XB at $4,599 (NewLighting), CHAUVET STRIKE Array 2 at $1,318 (AVL Supply), and Martin Atomic 3000 LED at $4,626 (Sweetwater). Source links are in the public expandable breakdown. Total $606,766; difference $579,766 (95.6%). The selected models are comparison references, not verified exact equivalents. This is an equipment estimate, not an integrator quote; no labor or integrator markup is invented. Taxes, shipping, installation, console, rigging, and volume discounts are excluded from the benchmark.

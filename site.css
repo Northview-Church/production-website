@@ -920,3 +920,17 @@ body {
     scroll-behavior: auto;
   }
 }
+
+.system-details__budget details {
+  margin-top: var(--s2);
+}
+
+.system-details__budget summary {
+  color: var(--nv-cyan);
+  cursor: pointer;
+}
+
+.system-details__budget details a {
+  color: var(--nv-cyan);
+  text-underline-offset: 3px;
+}
