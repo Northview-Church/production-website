@@ -141,8 +141,23 @@ The team confirmed the Neve input system as the 1073OPX, with 16 input channels 
 
 ## Networking inventory
 
-The team-provided UniFi inventory screenshots identify 17 devices: one UDM-Pro-Max, one USW-Pro-Aggregation, ten USW-Pro-Max-24 switches, three USW-Pro-Max-48 switches, one USP-RPS, and one U7 Pro XGS. The ten 24-port rows are Broadcast Audio, Stage Lighting, FOH Audio, Stage Keys, Video Desk, Atrium, Stage Racks, Video Rack 4, FOH Lighting 24, and Stage Drums. The three 48-port rows are FOH Lighting 48, Catwalk, and Video Rack 3. Switch PoE variants are not shown; do not infer them. The public section aggregates model quantities and high-level roles. No networking project budget has been supplied.
+The team-provided UniFi inventory screenshots identify 17 devices: one UDM-Pro-Max, one USW-Pro-Aggregation, ten USW-Pro-Max-24 switches, three USW-Pro-Max-48 switches, one USP-RPS, and one U7 Pro XGS. The ten 24-port rows are Broadcast Audio, Stage Lighting, FOH Audio, Stage Keys, Video Desk, Atrium, Stage Racks, Video Rack 4, FOH Lighting 24, and Stage Drums. The three 48-port rows are FOH Lighting 48, Catwalk, and Video Rack 3. Switch PoE variants are not shown; do not infer them. The public section aggregates model quantities and high-level roles. The team purchased the networking equipment from Ubiquiti and authorized use of its store pricing.
 
 Manufacturer names and links checked September 27, 2026. Ubiquiti currently names USW-Pro-Aggregation “Hi-Capacity Aggregation”; retain the SKU for recognition. USP-RPS is a redundant power system, not a UPS. Source screenshots and detailed uplink/port topology are not site assets.
 
 The public budget cards now show actual project spending only. Direct-versus-integrator comparisons, savings estimates, retail benchmarks, and the LED integrator quote were removed at the team’s request. Historical research above is retained for provenance, not for republication.
+
+## Networking pricing — September 27, 2026
+
+Current Ubiquiti U.S. store prices for the listed models, not verified historical invoice amounts. The public equipment total includes the store’s displayed surcharge; excludes tax, shipping, accessories, and optional services. No purchasing comparisons.
+
+| Model | Quantity | Base unit price | Unit price including surcharge | Extended price including surcharge |
+| --- | ---: | ---: | ---: | ---: |
+| [Dream Machine Pro Max](https://store.ui.com/us/en/products/udm-pro-max) | 1 | $599 | $646 | $646 |
+| [Hi-Capacity Aggregation](https://store.ui.com/us/en/products/usw-pro-aggregation) | 1 | $899 | $970 | $970 |
+| [Pro Max 24](https://store.ui.com/us/en/products/usw-pro-max-24) | 10 | $449 | $484 | $4,840 |
+| [Pro Max 48](https://store.ui.com/us/en/products/usw-pro-max-48) | 3 | $649 | $700 | $2,100 |
+| [Redundant Power](https://store.ui.com/us/en/products/usp-rps) | 1 | $399 | $430 | $430 |
+| [U7 Pro XGS](https://store.ui.com/us/en/products/u7-pro-xgs) | 1 | $299 | $322 | $322 |
+
+Total: **$9,308 including surcharge** ($8,633 base equipment pricing). Prices use the non-PoE Pro Max 24 and 48 models shown in the inventory.
